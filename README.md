@@ -108,9 +108,9 @@ SERVER_URL = "http://10.0.0.46:8000/v1/chat/completions"
 Modify the evaluation prompt in the script:
 
 ```python
-prompt = """Does this video conform to real world physics? 
+prompt = "Does this video conform to real world physics? 
 Analyze the motion, interactions, and physical behaviors shown. 
-Point out any violations of physical laws or unrealistic elements."""
+Point out any violations of physical laws or unrealistic elements."
 ```
 
 ### Requirements
@@ -135,6 +135,9 @@ The Remote Inference Client enables you to analyze images and videos using Cosmo
 **Cross-Platform:** Works on Mac, Windows, Linux, or any system with Python 3.9+
 
 **High level interaction**
+
+<img src="https://raw.githubusercontent.com/jonstephens85/cosmos-reason2-examples/main/assets/Client_Flowchart.png" width="700">
+
 
 ### Usage
 
