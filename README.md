@@ -134,6 +134,19 @@ The Remote Inference Client enables you to analyze images and videos using Cosmo
 
 **Cross-Platform:** Works on Mac, Windows, Linux, or any system with Python 3.9+
 
+**High level interaction**
+┌─────────────────┐         ┌─────────────────┐         ┌─────────────────┐
+│   MacBook       │         │    Network      │         │    DGX Spark    │
+│                 │         │                 │         │                 │
+│  📹 video.mp4   │ ──────→ │  HTTP Request   │ ──────→ │ 🎮 GPU + Model  │
+│                 │         │  (Base64 JSON)  │         │                 │
+│  Display result │ ←────── │  HTTP Response  │ ←────── │ Process & Reply │
+│                 │         │                 │         │                 │
+└─────────────────┘         └─────────────────┘         └─────────────────┘
+
+         Client                    Transport                    Server
+    (No GPU needed)             (Your Network)             (Heavy Compute)
+
 ### Usage
 
 #### Quick Start
